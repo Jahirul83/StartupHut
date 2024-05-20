@@ -1445,16 +1445,128 @@ html {
   margin-bottom: 0.75rem;
 }
 
-.visible {
-  visibility: visible;
+.absolute {
+  position: absolute;
 }
 
-.invisible {
-  visibility: hidden;
+.relative {
+  position: relative;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.top-40 {
+  top: 10rem;
+}
+
+.right-36 {
+  right: 9rem;
+}
+
+.left-48 {
+  left: 12rem;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.top-1 {
+  top: 0.25rem;
+}
+
+.top-1\/2 {
+  top: 50%;
+}
+
+.left-1\/2 {
+  left: 50%;
+}
+
+.left-32 {
+  left: 8rem;
+}
+
+.left-1 {
+  left: 0.25rem;
+}
+
+.top-auto {
+  top: auto;
+}
+
+.left-auto {
+  left: auto;
+}
+
+.top-96 {
+  top: 24rem;
+}
+
+.left-96 {
+  left: 24rem;
+}
+
+.top-52 {
+  top: 13rem;
+}
+
+.top-12 {
+  top: 3rem;
+}
+
+.top-10 {
+  top: 2.5rem;
+}
+
+.left-11 {
+  left: 2.75rem;
+}
+
+.top-32 {
+  top: 8rem;
+}
+
+.top-2 {
+  top: 0.5rem;
+}
+
+.top-20 {
+  top: 5rem;
+}
+
+.left-16 {
+  left: 4rem;
+}
+
+.left-20 {
+  left: 5rem;
+}
+
+.left-2 {
+  left: 0.5rem;
+}
+
+.left-24 {
+  left: 6rem;
+}
+
+.left-36 {
+  left: 9rem;
+}
+
+.left-3 {
+  left: 0.75rem;
 }
 
 .m-5 {
   margin: 1.25rem;
+}
+
+.m-auto {
+  margin: auto;
 }
 
 .mx-2 {
@@ -1487,16 +1599,6 @@ html {
   margin-bottom: 1.25rem;
 }
 
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.my-7 {
-  margin-top: 1.75rem;
-  margin-bottom: 1.75rem;
-}
-
 .-mt-7 {
   margin-top: -1.75rem;
 }
@@ -1525,20 +1627,12 @@ html {
   margin-top: 1.25rem;
 }
 
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
 .flex {
   display: flex;
 }
 
 .grid {
   display: grid;
-}
-
-.hidden {
-  display: none;
 }
 
 .h-1\/6 {
@@ -1551,6 +1645,22 @@ html {
 
 .h-8 {
   height: 2rem;
+}
+
+.h-0 {
+  height: 0px;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-4\/5 {
+  height: 80%;
 }
 
 .w-1\/2 {
@@ -1577,6 +1687,18 @@ html {
   width: 100%;
 }
 
+.w-0 {
+  width: 0px;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-10\/12 {
+  width: 83.333333%;
+}
+
 .max-w-screen-xl {
   max-width: 1280px;
 }
@@ -1595,14 +1717,6 @@ html {
 
 .items-center {
   align-items: center;
-}
-
-.justify-start {
-  justify-content: flex-start;
-}
-
-.justify-end {
-  justify-content: flex-end;
 }
 
 .justify-between {
@@ -1637,13 +1751,51 @@ html {
   overflow: auto;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .border-t {
   border-top-width: 1px;
+}
+
+.border-b-\[50px\] {
+  border-bottom-width: 50px;
+}
+
+.border-l-\[75px\] {
+  border-left-width: 75px;
+}
+
+.border-t-\[50px\] {
+  border-top-width: 50px;
+}
+
+.border-l {
+  border-left-width: 1px;
 }
 
 .border-base-300 {
   --tw-border-opacity: 1;
   border-color: var(--fallback-b3,oklch(var(--b3)/var(--tw-border-opacity)));
+}
+
+.border-b-transparent {
+  border-bottom-color: transparent;
+}
+
+.border-l-green-500 {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(34 197 94 / var(--tw-border-opacity));
+}
+
+.border-t-transparent {
+  border-top-color: transparent;
+}
+
+.border-l-white {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-\[\#16697a\] {
@@ -1709,6 +1861,10 @@ html {
   padding: 2rem;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1726,6 +1882,10 @@ html {
 
 .text-center {
   text-align: center;
+}
+
+.font-\[\#16697a\] {
+  font-family: #16697a;
 }
 
 .text-2xl {
@@ -1763,6 +1923,11 @@ html {
   line-height: 1.25rem;
 }
 
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1788,6 +1953,15 @@ html {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
+}
+
+.text-\[\#00a0c1\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 160 193 / var(--tw-text-opacity));
 }
 
 .shadow-2xl {
@@ -1831,19 +2005,21 @@ html {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (min-width: 640px) {
-  .sm\:hidden {
-    display: none;
-  }
-}
-
 @media (min-width: 768px) {
-  .md\:visible {
-    visibility: visible;
+  .md\:top-52 {
+    top: 13rem;
   }
 
-  .md\:invisible {
-    visibility: hidden;
+  .md\:left-96 {
+    left: 24rem;
+  }
+
+  .md\:top-1\/2 {
+    top: 50%;
+  }
+
+  .md\:left-1\/2 {
+    left: 50%;
   }
 
   .md\:my-12 {
@@ -1897,10 +2073,6 @@ html {
 }
 
 @media (min-width: 1024px) {
-  .lg\:visible {
-    visibility: visible;
-  }
-
   .lg\:hidden {
     display: none;
   }
